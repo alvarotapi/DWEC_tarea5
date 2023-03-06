@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea 5 - Álvaro Tapiador de la Torre</title>
+    <script src="script.js"></script>
+    <style>
+        #contenedor {
+            padding: 15px 15px 15px 15px;
+            margin: 20px 50px 20px 50px;
+            border-radius: 10px;
+            background-color: rgb(213, 251, 192);
+        }
+
+        label {
+            width: 14%;
+            float: left;
+            font-weight: bold;
+        }
+
+        div {
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Validar Formulario</h1>
+        <hr>
+    </header>
+    <section>
+        <h2>Datos de identificación</h2>
+        <div id="contenedor">
+            <form action="" onsubmit="return validar();">
+                <div id="divUsuario">
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" id="usuario" name="usuario">
+                    <span class="error"></span>
+                </div>
+                <div id="divContrasenia">
+                    <label for="contrasenia">Contraseña:</label>
+                    <input type="password" id="contrasenia" name="contrasenia">
+                    <span class="error"></span>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar" id="boton"/>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <hr>
+        <h3>Validación del formulario realizada por: Álvaro Tapiador de la Torre</h3>
+    </footer>
+</body>
+</html>
